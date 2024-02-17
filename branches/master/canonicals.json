@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "openhie.fhir.teamPhillip-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://openhie.fhir.org/fhir/teamPhillip-ig/ImplementationGuide/openhie.fhir.teamPhillip-ig",
+    "version" : "1.0.0",
+    "name" : "teamPhillipig"
+  },
+  {
+    "id" : "ZambiaPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.fhir.org/fhir/teamPhillip-ig/StructureDefinition/ZambiaPatient",
+    "version" : "1.0.0",
+    "name" : "ZambiaPatient"
+  }
+]

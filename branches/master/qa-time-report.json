@@ -1,0 +1,139 @@
+{
+  "date" : "Sat, 17 Feb, 2024 10:01:27 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-openhie.fhir.teamPhillip-ig.json",
+      "size" : 2711,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 32
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 32,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 32,
+          "length" : 70
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 619
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 69
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 53
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 43,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-ZambiaPatientExample.json",
+      "size" : 1396,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 31,
+          "length" : 25
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 32,
+          "length" : 415
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 34,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 33
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ZambiaPatient.json",
+      "size" : 5667,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 31,
+          "length" : 36
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 30
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 31,
+          "length" : 409
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 32,
+          "length" : 377
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 1388
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 736
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 2798
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 43,
+          "length" : 24
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 46,
+          "length" : 2
+        }
+      ]
+    }
+  ]
+}

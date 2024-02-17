@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.fhir.org/fhir/teamPhillip-ig/Patient/ZambiaPatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ZambiaPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.fhir.org/fhir/teamPhillip-ig/StructureDefinition/ZambiaPatient"^^xsd:anyURI ;
+       fhir:link <http://openhie.fhir.org/fhir/teamPhillip-ig/StructureDefinition/ZambiaPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Mary Kalumaba (OFFICIAL)</b> female, DoB: 2000-01-01 ( <code>http://openhie.org/fhir/phillip-ig/identifier/patient-nupn</code>/5005-00100-10000-1)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/5.1.0/CodeSystem-v3-MaritalStatus M}\">M</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li><code>http://openhie.org/fhir/phillip-ig/identifier/patient-nrc</code>/999999/99/1</li><li><code>http://openhie.org/fhir/phillip-ig/identifier/patient-nhima</code>/1000000000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt Names:</td><td colspan=\"3\"><ul><li>Bana Junior(NICKNAME)</li><li>Manda (MAIDEN)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>Ndola Central Hospital Copperbelt Zambia (OLD)</li><li>Kansenshi Copperbelt Zambia (HOME)</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openhie.org/fhir/phillip-ig/identifier/patient-nupn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "5005-00100-10000-1" ]
+  ] [
+     fhir:system [ fhir:v "http://openhie.org/fhir/phillip-ig/identifier/patient-nrc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "999999/99/1" ]
+  ] [
+     fhir:system [ fhir:v "http://openhie.org/fhir/phillip-ig/identifier/patient-nhima"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1000000000" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Kalumaba" ] ;
+     fhir:given ( [ fhir:v "Mary" ] )
+  ] [
+     fhir:use [ fhir:v "nickname" ] ;
+     fhir:text [ fhir:v "Bana Junior" ]
+  ] [
+     fhir:use [ fhir:v "maiden" ] ;
+     fhir:family [ fhir:v "Manda" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2000-01-01"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "old" ] ;
+     fhir:line ( [ fhir:v "Ndola Central Hospital" ] ) ;
+     fhir:district [ fhir:v "Ndola" ] ;
+     fhir:state [ fhir:v "Copperbelt" ] ;
+     fhir:country [ fhir:v "Zambia" ]
+  ] [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "Kansenshi" ] ) ;
+     fhir:district [ fhir:v "Ndola" ] ;
+     fhir:state [ fhir:v "Copperbelt" ] ;
+     fhir:country [ fhir:v "Zambia" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/5.1.0/CodeSystem-v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

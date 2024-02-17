@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ZambiaPatientExample"/>
+  <meta>
+    <profile value="http://openhie.fhir.org/fhir/teamPhillip-ig/StructureDefinition/ZambiaPatient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Mary Kalumaba (OFFICIAL)</b> female, DoB: 2000-01-01 ( <code>http://openhie.org/fhir/phillip-ig/identifier/patient-nupn</code>/5005-00100-10000-1)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes: {http://terminology.hl7.org/5.1.0/CodeSystem-v3-MaritalStatus M}">M</span></td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li><code>http://openhie.org/fhir/phillip-ig/identifier/patient-nrc</code>/999999/99/1</li><li><code>http://openhie.org/fhir/phillip-ig/identifier/patient-nhima</code>/1000000000</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Alternate names (see the one above)">Alt Names:</td><td colspan="3"><ul><li>Bana Junior(NICKNAME)</li><li>Manda (MAIDEN)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>Ndola Central Hospital Copperbelt Zambia (OLD)</li><li>Kansenshi Copperbelt Zambia (HOME)</li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://openhie.org/fhir/phillip-ig/identifier/patient-nupn"/>
+    <value value="5005-00100-10000-1"/>
+  </identifier>
+  <identifier>
+    <system value="http://openhie.org/fhir/phillip-ig/identifier/patient-nrc"/>
+    <value value="999999/99/1"/>
+  </identifier>
+  <identifier>
+    <system value="http://openhie.org/fhir/phillip-ig/identifier/patient-nhima"/>
+    <value value="1000000000"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Kalumaba"/>
+    <given value="Mary"/>
+  </name>
+  <name>
+    <use value="nickname"/>
+    <text value="Bana Junior"/>
+  </name>
+  <name>
+    <use value="maiden"/>
+    <family value="Manda"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="2000-01-01"/>
+  <address>
+    <use value="old"/>
+    <line value="Ndola Central Hospital"/>
+    <district value="Ndola"/>
+    <state value="Copperbelt"/>
+    <country value="Zambia"/>
+  </address>
+  <address>
+    <use value="home"/>
+    <line value="Kansenshi"/>
+    <district value="Ndola"/>
+    <state value="Copperbelt"/>
+    <country value="Zambia"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/5.1.0/CodeSystem-v3-MaritalStatus"/>
+      <code value="M"/>
+    </coding>
+  </maritalStatus>
+</Patient>

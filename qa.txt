@@ -1,0 +1,22 @@
+teamPhillipig : Validation Results
+=========================================
+
+err = 0, warn = 5, info = 2
+IG Publisher Version: 1.5.16
+Generated Sat Feb 17 10:01:42 UTC 2024. FHIR version 5.0.0 for openhie.fhir.teamPhillip-ig#1.0.0 (canonical = http://openhie.fhir.org/fhir/teamPhillip-ig)
+ Build Errors : 0 / 3 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.teamPhillip-ig : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Patient-ZambiaPatientExample : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ZambiaPatient : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-openhie.fhir.teamPhillip-ig.json ==
+INFORMATION: ImplementationGuide/openhie.fhir.teamPhillip-ig: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ImplementationGuide/openhie.fhir.teamPhillip-ig: ImplementationGuide: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
+== fsh-generated/resources/Patient-ZambiaPatientExample.json ==
+WARNING: Patient/ZambiaPatientExample: Patient.maritalStatus.coding[0]: A definition for CodeSystem 'http://terminology.hl7.org/5.1.0/CodeSystem-v3-MaritalStatus' could not be found, so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-ZambiaPatient.json ==
+INFORMATION: StructureDefinition/ZambiaPatient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
