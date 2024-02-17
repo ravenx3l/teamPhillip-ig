@@ -46,7 +46,7 @@ contact:
   - name: Bob Smith
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: bobsmith2@example.com
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
