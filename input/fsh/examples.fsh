@@ -28,6 +28,7 @@ Description: "Zambia Patient Example"
 * address[CurrentAddress].district = "Ndola"
 * address[CurrentAddress].state = "Copperbelt"
 * address[CurrentAddress].country = "Zambia"
-* maritalStatus = #M
+* maritalStatus.coding.code = #M
+* maritalStatus.coding.system = "http://terminology.hl7.org/5.1.0/CodeSystem-v3-MaritalStatus"
 
  
