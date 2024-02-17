@@ -7,21 +7,21 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
+id: openhie.fhir.teamPhillip-ig
+canonical: http://openhie.fhir.org/fhir/teamPhillip-ig
+url: http://openhie.fhir.org/fhir/teamPhillip-ig/ImplementationGuide/openhie.fhir.teamPhillip-ig
+name: teamPhillip-ig
 title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
-date: 2020-02-26
+date: 2024-02-16
 version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here, but the current tooling 
 # only supports one FHIR version per Implementation Guide
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0
 
 # The following two lines correspond to items that used to be in
 # ig.ini but were moved to IG.definition.parameter. For
@@ -38,7 +38,7 @@ releaseLabel: STU1
 # will be translated into IG.contact values.
 publisher:
   name: My Organization 
-  url: http://example.com/committees
+  url: http://openhie.fhir.org/
   email: my-group@example.com
 
 # ContactDetail is required by the template.
